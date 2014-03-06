@@ -7,6 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <h3 style="float: right; margin-top: 0">Current User: <%= current_user.present? ? current_user.name : "None" %></h3>
 
 <%= yield %>
 
